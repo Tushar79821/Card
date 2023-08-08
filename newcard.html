@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARD</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background: #c33764; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #1d2671,
+          #c33764
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #1d2671,
+          #c33764
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        height: 540px;
+        width: 350px;
+        border-radius: 18px;
+        background-color: white;
+        box-shadow: 6px 0 30px -4px #999, -6px 0 30px -4px #999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      #logo {
+        height: 170px;
+        width: 350px;
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+      }
+      .textbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 5px;
+        text-align: center;
+        width: 300px;
+      }
+      .amountbox {
+        width: 90%;
+        height: 50px;
+        background-color: rgb(58, 49, 239);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+        box-shadow: 6px 0 10px -4px #999, -6px 0 10px -4px #999;
+      }
+      .checkout{
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border: none;
+        height: 50px;
+        width: 90%;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-right: 8px;
+        transition: background-color 1s;
+        transition: opacity 0.5s;
+        box-shadow: 1px 2px 10px black;
+        margin-left: 7px;
+        /*this is css comment*/
+        /*  this is html comment <!--...-->*/
+        margin-top: 10px;
+      }
+      .checkout:hover{
+        background-color: rgb(204, 77, 77);
+      }
+      .checkout:active{
+        background-color: rgb(211, 86, 86);
+      }
+      a{
+        font-weight: bold;
+      }
+      .thumb{
+        height: 35px;
+        border-radius: 20px;
+        margin-top: 7px;
+        margin-left: 5px;
+      }
+      #a{
+        color: black;
+        margin-top: 10px;
+      }
+      .cancelbox{
+        margin-top: 10px;
+      }
+      .rightbox{
+        margin-right: 18px;
+        margin-top: 13px;
+      }
+      .leftbox{
+        display: flex;
+        flex-direction: row;
+      }
+      .textamountbox{
+        margin-top:7px ;
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="vonage-digital-transformation-cc.jpeg" id="logo" />
+        <div class="textbox">
+          <h2>Order Summary</h2>
+          <p>
+            This order will be delivered to yoy within one week of ordering.
+            Hope you like our Product. Don't forget to review our item. Do
+            comeback and rate the product. Hope to see you soon again!
+          </p>
+        </div>
+        <div class="amountbox">
+          <div class="leftbox">
+            <div class="imagebox">
+              <img src="thumb nail.jpg" class="thumb">
+            </div>
+            <div class="textamountbox">
+              <p>Annual plan</p>
+               <p> $500/year
+              </p>
+            </div>
+          </div>
+          <div class="rightbox">
+            <a href="#" id="a"> Change</a>
+          </div>
+        </div>
+        <button class="checkout">Proceed to buy</button>
+        <div class="cancelbox">
+          <a href="#">Cancel Order</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
